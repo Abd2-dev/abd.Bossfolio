@@ -1,0 +1,220 @@
+/* Reset some default styles for consistency */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: #757070;
+  background-color: #42968ab0;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  color: #7f8c8d;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #2980b9;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #3498db;
+}
+
+/* Services Section */
+#services {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+#services h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+#services ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+#services li {
+  font-size: 1.3em;
+  background-color: #ecf0f1;
+  padding: 10px 20px;
+  border-radius: 5px;
+  width: 200px;
+  text-align: center;
+}
+
+#services li:hover {
+  background-color: #3498db;
+  color: #fff;
+}
+
+/* Client Reviews Section */
+#reviews {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+#reviews h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+#reviews p {
+  font-style: italic;
+  color: #7f8c8d;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+/* Contact Section */
+#contact {
+  text-align: center;
+}
+
+#contact h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+input, textarea {
+  width: 100%;
+  max-width: 500px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1em;
+}
+
+input:focus, textarea:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+button {
+  padding: 12px 25px;
+  background-color: #2980b9;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #3498db;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 50px;
+  padding: 20px 0;
+  background-color: #34495e;
+  color: #fff;
+}
+
+footer p {
+  margin-bottom: 10px;
+}
+
+.social a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.social a:hover {
+  color: #3498db;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2.5em;
+  }
+
+  header p {
+    font-size: 1em;
+  }
+
+  #services ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #services li {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  form {
+    width: 100%;
+  }
+
+  input, textarea {
+    width: 90%;
+  }
+
+  footer {
+    padding: 20px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 2em;
+  }
+
+  #services li {
+    font-size: 1.1em;
+  }
+
+  #reviews p {
+    font-size: 1em;
+  }
+
+  button {
+    font-size: 1em;
+  }
+}
