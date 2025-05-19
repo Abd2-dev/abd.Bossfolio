@@ -1,12 +1,10 @@
-<html lang="en"><head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ABDULLAHIL KAFI</title>
-    
+<title>ABDULLAHIL KAFI</title>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&amp;display=swap" rel="stylesheet">
-    <style>
-        * {
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+       
+    {script}
+    * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -113,7 +111,7 @@
         }
 
         /* Services Section */
-        .services { 
+        .services {
             padding: 4rem 2rem;
             text-align: center;
             background: #141414;
@@ -349,32 +347,10 @@
             }
         }
     </style>
-</head>
-<body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="logo">ABDULLAHIL KAFI</div>
-        <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#reviews">Reviews</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-        <div class="hamburger">
-            <i class="fas fa-bars"></i>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <h1>Crafting the Future of Tech</h1>
-        <p>Full-stack developer specializing in innovative web solutions</p>
-        <a href="#contact" class="btn">Let's Connect</a>
-    </section>
 
     <!-- Services Section -->
     <section id="services" class="services">
-        <h2>MY SERVICE</h2>
+        <h2>Our Services</h2>
         <ul>
             <li>
                 <i class="fas fa-code"></i>
@@ -390,7 +366,7 @@
             </li>
             <li>
                 <i class="fas fa-robot"></i>
-                <span>API Integration</span>
+                <span>AI Integration</span>
             </li>
         </ul>
     </section>
@@ -402,60 +378,3 @@
         <p>"Innovative solutions and top-notch support." - StartupX</p>
         <p>"Delivered a stunning mobile app on time." - AppWorld</p>
     </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <h2>Get in Touch</h2>
-        <form id="contact-form">
-            <input type="text" id="name" placeholder="Your Name" required="">
-            <input type="email" id="email" placeholder="Your Email" required="">
-            <textarea id="message" placeholder="Your Message" required=""></textarea>
-            <button type="submit">Send Message</button>
-        </form>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <p>© 2025 ABDULLAHIL KAFI. All rights reserved.</p>
-        <div class="social">
-            <a href="https://abd2-dev.github.io/Bossfolio" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
-        </div>
-    </footer>
-
-    <script>
-        // Hamburger Menu Toggle
-        const hamburger = document.querySelector('.hamburger');
-        const navLinks = document.querySelector('.nav-links');
-
-        hamburger.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-        });
-
-        // Smooth Scroll
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-                navLinks.classList.remove('active'); // Close menu on link click
-            });
-        });
-
-        // Contact Form Submission
-        document.getElementById('contact-form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            const message = document.getElementById('message').value;
-
-            // Demo alert for form submission
-            alert(`Message sent!\nName: ${name}\nEmail: ${email}\nMessage: ${message}`);
-            this.reset();
-        });
-    </script>
-
-
-</body></html>
